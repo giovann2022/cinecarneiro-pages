@@ -1,264 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cine Carneiro – Instalação</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Carneiro - Guia de Instalação</title>
 
-<style>
-  :root {
-    --bg: #f7f9fc;
-    --card-bg: #ffffff;
-    --border: #e4e8ee;
-    --text: #1a1a1a;
-    --text-muted: #6b7280;
-    --primary: #1a73e8;
-    --radius: 14px;
-    --shadow: 0 2px 6px rgba(0,0,0,0.06);
-  }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-  }
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 26px;
-    background: var(--card-bg);
-    border-bottom: 1px solid var(--border);
-    box-shadow: var(--shadow);
-  }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
 
-  header .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
+        h1, h2 {
+            color: #222;
+        }
 
-  header .brand img {
-    width: 34px;
-    height: 34px;
-  }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-  .container {
-    max-width: 980px;
-    margin: 22px auto;
-    padding: 0 16px;
-  }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+        }
 
-  h1 {
-    font-size: 26px;
-    margin-bottom: 14px;
-  }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
 
-  p {
-    line-height: 1.5;
-  }
+        .button {
+            display: inline-block;
+            background-color: #0d6efd;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
 
-  code {
-    background: #eef3ff;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 14px;
-    word-wrap: break-word;
-    display: inline-block;
-  }
-
-  /* Cards */
-  .card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px;
-    margin-bottom: 18px;
-    box-shadow: var(--shadow);
-  }
-
-  .grid {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-
-  .card h3 {
-    margin-top: 0;
-  }
-
-  .btn {
-    background: var(--primary);
-    color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    margin-top: 12px;
-  }
-
-  .btn:hover {
-    opacity: .9;
-  }
-
-  /* Screenshots section */
-  .screens-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 14px;
-    margin-top: 14px;
-  }
-
-  .screen figcaption {
-    font-size: 12px;
-    text-align: center;
-    color: var(--text-muted);
-    margin-top: 4px;
-  }
-
-  .img-wrap {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-  }
-
-  .img-wrap img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-</style>
+        .server-box {
+            background: #eef7ff;
+            padding: 12px;
+            border-left: 4px solid #0d6efd;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <div class="brand">
-    <img src="https://img.icons8.com/color/48/film-reel.png">
-    Cine Carneiro
-  </div>
+    <h1>Cine Carneiro</h1>
+    <p>Guia rápido de instalação</p>
 </header>
 
 <div class="container">
 
-  <h1>Como assistir ao Cine Carneiro</h1>
+    <h2>Como assistir ao Cine Carneiro</h2>
+    <p>Siga os passos abaixo para instalar o aplicativo Jellyfin e conectar ao servidor oficial.</p>
 
-  <div class="card">
-    <p>Use o endereço abaixo em todos os dispositivos:</p>
-    <code>https://filmes.cinecarneiro.online</code>
-    <p>Após instalar o aplicativo Jellyfin, toque em <b>“Adicionar servidor”</b> ou <b>“Connect to server”</b> e cole o endereço acima.</p>
-  </div>
+    <div class="server-box">
+        🔗 Servidor seguro: <strong>https://filmes.cinecarneiro.online</strong>
+    </div>
 
-  <!-- Screenshots -->
-  <div class="card">
-    <h3>Visão rápida em imagens</h3>
-    <p>Veja o caminho completo: abrir app → colar servidor → login → biblioteca.</p>
+    <h2>1. Escolha seu dispositivo</h2>
 
-    <div class="screens-grid">
+    <div class="card-grid">
 
-      <figure class="screen">
-        <div class="img-wrap">
-          <img src="tela-inicial.jpeg" alt="Tela inicial do Jellyfin">
+        <!-- ANDROID -->
+        <div class="card">
+            <h3>📱 Android</h3>
+            <p>1. Abra a Play Store<br>
+               2. Instale o app <b>Jellyfin</b><br>
+               3. Toque em “Adicionar servidor”<br>
+               4. Use o endereço:</p>
+
+            <div class="server-box">https://filmes.cinecarneiro.online</div>
+
+            <img src="tela-inicial.jpeg" alt="Tela inicial Android">
+            <img src="campo-servidor.jpeg" alt="Campo do Servidor">
+            <img src="tela-login.jpeg" alt="Tela de Login">
+            <img src="tela-pos-login.jpeg" alt="Tela após login">
+
+            <a class="button" href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile">Abrir na Play Store</a>
         </div>
-        <figcaption>1. Tela inicial</figcaption>
-      </figure>
 
-      <figure class="screen">
-        <div class="img-wrap">
-          <img src="campo-servidor.jpeg" alt="Campo para colar o servidor">
+        <!-- IPHONE -->
+        <div class="card">
+            <h3>🍎 iPhone / iPad</h3>
+
+            <p>1. Abra a App Store<br>
+               2. Instale o app <b>Jellyfin Mobile</b><br>
+               3. Toque em “Connect to Server”<br>
+               4. Cole o endereço:</p>
+
+            <div class="server-box">https://filmes.cinecarneiro.online</div>
+
+            <img src="tela-inicial.jpeg">
+            <img src="campo-servidor.jpeg">
+            <img src="tela-login.jpeg">
+            <img src="tela-pos-login.jpeg">
+
+            <a class="button" href="https://apps.apple.com/app/jellyfin-mobile/id1480192618">Abrir na App Store</a>
         </div>
-        <figcaption>2. Campo do servidor</figcaption>
-      </figure>
 
-      <figure class="screen">
-        <div class="img-wrap">
-          <img src="tela-login.jpeg" alt="Tela de login">
+        <!-- WINDOWS -->
+        <div class="card">
+            <h3>🖥 Windows</h3>
+
+            <p>1. Baixe o Jellyfin Media Player<br>
+               2. Instale normalmente<br>
+               3. Informe o servidor:</p>
+
+            <div class="server-box">https://filmes.cinecarneiro.online</div>
+
+            <a class="button" href="https://repo.jellyfin.org/releases/clients/windows/">Baixar para Windows</a>
         </div>
-        <figcaption>3. Tela de login</figcaption>
-      </figure>
 
-      <figure class="screen">
-        <div class="img-wrap">
-          <img src="tela-pos-login.jpeg" alt="Tela pós login">
+        <!-- LINUX -->
+        <div class="card">
+            <h3>🐧 Linux</h3>
+
+            <p>1. Baixe o Jellyfin Media Player<br>
+               2. Instale o pacote da sua distro<br>
+               3. Informe o servidor:</p>
+
+            <div class="server-box">https://filmes.cinecarneiro.online</div>
+
+            <a class="button" href="https://repo.jellyfin.org/">Baixar para Linux</a>
         </div>
-        <figcaption>4. Biblioteca carregada</figcaption>
-      </figure>
+
+        <!-- SMART TV -->
+        <div class="card">
+            <h3>📺 Smart TVs</h3>
+
+            <p>Procure por <b>“Jellyfin”</b> na loja da TV<br>
+               Ou acesse via navegador:</p>
+
+            <div class="server-box">https://filmes.cinecarneiro.online</div>
+
+            <a class="button" href="#">Abrir na TV</a>
+        </div>
 
     </div>
-  </div>
-
-  <!-- Devices -->
-  <h2>1. Escolha seu dispositivo</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Android</h3>
-      <p>
-        1. Abra a Play Store.<br>
-        2. Instale o app <b>Jellyfin</b>.<br>
-        3. Toque em “Adicionar servidor”.<br>
-        4. Cole o endereço:<br>
-        <code>https://filmes.cinecarneiro.online</code>
-      </p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile" target="_blank">Abrir na Play Store</a>
-    </div>
-
-    <div class="card">
-      <h3>iPhone / iPad</h3>
-      <p>
-        1. Abra a App Store.<br>
-        2. Instale <b>Jellyfin Mobile</b>.<br>
-        3. Toque em “Connect to Server”.<br>
-        4. Cole o endereço:<br>
-        <code>https://filmes.cinecarneiro.online</code>
-      </p>
-      <a class="btn" href="https://apps.apple.com/br/app/jellyfin-mobile/id1480192618" target="_blank">Abrir na App Store</a>
-    </div>
-
-    <div class="card">
-      <h3>Windows</h3>
-      <p>
-        1. Baixe o Jellyfin Media Player.<br>
-        2. Instale normalmente.<br>
-        3. Informe o servidor:<br>
-        <code>https://filmes.cinecarneiro.online</code>
-      </p>
-      <a class="btn" href="https://repo.jellyfin.org/releases/clients/desktop/" target="_blank">Baixar para Windows</a>
-    </div>
-
-    <div class="card">
-      <h3>Linux</h3>
-      <p>
-        1. Baixe o Jellyfin Media Player.<br>
-        2. Instale o pacote da sua distro.<br>
-        3. Informe o servidor:<br>
-        <code>https://filmes.cinecarneiro.online</code>
-      </p>
-      <a class="btn" href="https://repo.jellyfin.org/releases/clients/desktop/" target="_blank">Baixar para Linux</a>
-    </div>
-
-    <div class="card">
-      <h3>Smart TVs</h3>
-      <p>
-        • Android TV, Google TV, WebOS e Tizen.<br><br>
-        Procure por <b>“Jellyfin”</b> na loja da TV<br>
-        ou abra o navegador e acesse:<br>
-        <code>https://filmes.cinecarneiro.online</code>
-      </p>
-    </div>
-
-  </div>
-
 </div>
 
 </body>
